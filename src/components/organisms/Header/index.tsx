@@ -5,7 +5,7 @@ import { colors } from 'src/styles/Tokens';
 import Link from 'next/link';
 
 const Wrapper = styled.header`
-  width: 100%;
+  width: 100vw;
   padding: 8px 0;
   background-color: ${colors.White};
   display: flex;
