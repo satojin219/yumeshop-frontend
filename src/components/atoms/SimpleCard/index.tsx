@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { VFC } from 'react';
 import styled from 'styled-components';
 
 interface SimpleCardProps {
   image: string;
   title: string;
-  url: string;
+  path: string;
 }
 
 const Wrapper = styled.div`
@@ -26,13 +27,15 @@ const TitleWrapper = styled.p`
 `;
 
 export const SimpleCard: VFC<SimpleCardProps> = (props) => {
-  const { image, title } = props;
+  const { image, title, path } = props;
   return (
-    <Wrapper>
-      <ImageWrapper>
-        <Image src={image} alt={title} fill />
-      </ImageWrapper>
-      <TitleWrapper>{title}</TitleWrapper>
-    </Wrapper>
+    <Link href={path}>
+      <Wrapper>
+        <ImageWrapper>
+          <Image src={image} alt={title} fill />
+        </ImageWrapper>
+        <TitleWrapper>{title}</TitleWrapper>
+      </Wrapper>
+    </Link>
   );
 };
