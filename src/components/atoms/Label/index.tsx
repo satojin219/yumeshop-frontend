@@ -12,7 +12,7 @@ export interface LabelProps{
 export const Label: VFC<LabelProps> = (props) => {
   const { name, color } = props;
   const Wrapper = styled.div`
-  display: inline;
+    display: inline;
     padding: 2px 4px;
     margin: 0 2px;
     color: white;
