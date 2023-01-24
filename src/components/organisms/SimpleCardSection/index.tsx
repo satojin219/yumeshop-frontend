@@ -10,6 +10,8 @@ export interface SimpleCardSectionProps {
 
 const SimpleCardWrapper = styled.div`
   display: flex;
+  gap: 16px;
+  padding: 16px 0px;
   align-items: stretch;
   overflow-x: scroll;
   width: 320px;
@@ -21,6 +23,7 @@ const SimpleCardWrapper = styled.div`
   }
   @media (min-width: 1152px) {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   ::-webkit-slider {

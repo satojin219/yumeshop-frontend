@@ -11,22 +11,25 @@ export interface SimpleCardProps {
 }
 
 const Wrapper = styled.div`
-  margin: 16px 4px;
   background: #ffffff;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  max-width: 244px;
-  min-width: 244px;
-  min-height: 56px;
   overflow: hidden;
   border-radius: 8px;
-  flex-grow: 1;
+  min-width: 200px;
+  width: 200px;
+  @media (min-width: 1152px) {
+    min-width: 244px;
+    width: 244px;
+  }
 `;
 const ImageWrapper = styled.div`
   position: relative;
   aspect-ratio: 16/9;
+
 `;
 const TitleWrapper = styled.p`
   padding: 12px 8px;
+  min-height: 48px;
 `;
 
 export const SimpleCard: VFC<SimpleCardProps> = (props) => {
@@ -35,10 +38,10 @@ export const SimpleCard: VFC<SimpleCardProps> = (props) => {
     <Wrapper>
       <Link href={path}>
         <>
-        <ImageWrapper>
-          <Image src={image} alt={title} fill />
-        </ImageWrapper>
-        <TitleWrapper>{title}</TitleWrapper>
+          <ImageWrapper>
+            <Image src={image} alt={title} fill />
+          </ImageWrapper>
+          <TitleWrapper>{title}</TitleWrapper>
         </>
       </Link>
     </Wrapper>

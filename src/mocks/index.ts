@@ -4,25 +4,37 @@ export const exampleCampaignMock = [
   {
     id: uuid(),
     image: 'https://picsum.photos/id/1019/1000/600/',
-    title: 'ゆめみゆめみゆめみゆめみゆめみゆ',
+    title: 'ゆめみゆめみ',
     path: '/shop_items',
   },
   {
     id: uuid(),
     image: 'https://picsum.photos/id/1019/1000/600/',
-    title: 'ゆめゆめみゆめみゆめみゆめゆめめ',
+    title: 'ゆめゆめ',
     path: '/shop_items',
   },
   {
     id: uuid(),
     image: 'https://picsum.photos/id/1019/1000/600/',
-    title: 'ゆめみゆめみゆ',
+    title: 'ゆめみゆめみゆゆめみゆめみゆゆめみゆめみゆゆめみゆめみゆ',
     path: '/shop_items',
   },
   {
     id: uuid(),
     image: 'https://picsum.photos/id/1019/1000/600/',
-    title: '',
+    title: 'ゆめみゆめみゆゆめみゆめみゆ',
+    path: '/shop_items',
+  },
+  {
+    id: uuid(),
+    image: 'https://picsum.photos/id/1019/1000/600/',
+    title: 'ゆめみゆめみゆゆめみゆめみゆゆめみゆめみゆ',
+    path: '/shop_items',
+  },
+  {
+    id: uuid(),
+    image: 'https://picsum.photos/id/1019/1000/600/',
+    title: 'ゆめみゆめみゆゆめみゆめみゆ',
     path: '/shop_items',
   },
 ];
@@ -49,7 +61,7 @@ export const exampleCategoryMock = [
   {
     id: uuid(),
     image: 'https://picsum.photos/id/1019/1000/600/',
-    title: '',
+    title: 'ゆめみゆめみゆ',
     path: '/shop_items',
   },
 ];
