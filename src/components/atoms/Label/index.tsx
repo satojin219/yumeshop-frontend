@@ -13,10 +13,11 @@ export const Label: VFC<LabelProps> = (props) => {
   const { name, color } = props;
   const Wrapper = styled.div`
     display: inline;
-    padding: 2px 4px;
-    margin: 0 2px;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 20px;
     color: white;
     background-color: ${color};
-  `
+  `;
   return <Wrapper>{name}</Wrapper>
 }
