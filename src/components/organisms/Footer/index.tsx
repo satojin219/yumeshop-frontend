@@ -13,6 +13,7 @@ const Wrapper = styled.footer`
   flex-direction: column;
   background: #ffffff;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 128px;
 `;
 const LinkWrapper = styled.div`
   display: flex;

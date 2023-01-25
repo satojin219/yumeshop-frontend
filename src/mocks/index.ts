@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { WideCardProps } from "src/components/atoms/WideCard";
+import { WideCardProps } from 'src/components/atoms/WideCard';
 import uuid from 'react-uuid';
 
 export const exampleCalrouselMock = [
@@ -79,7 +79,7 @@ export const exampleCategoryMock = [
   },
 ];
 
-export const exampleNoticeMock:WideCardProps[] = [
+export const exampleNoticeMock: WideCardProps[] = [
   {
     time: dayjs('2020-12-23'),
     labels: [
@@ -111,5 +111,32 @@ export const exampleNoticeMock:WideCardProps[] = [
       },
     ],
     text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+  },
+];
+
+export const exampleLinksMock = [
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
+  },
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
+  },
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
+  },
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
+  },
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
+  },
+  {
+    name: 'メニューメニュー',
+    path: 'https://www.yumemi.co.jp/',
   },
 ];
