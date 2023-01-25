@@ -4,7 +4,7 @@ import { colors } from 'src/styles/Tokens';
 
 const Wrapper = styled.footer`
   width: 100%;
-  padding: 16px 0;
+  padding: 16px;
   font-size: 12px;
   background-color: ${colors.White};
   display: flex;
@@ -17,7 +17,7 @@ const Wrapper = styled.footer`
 const LinkWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px 20px;
   margin-bottom: 64px;
 `;
