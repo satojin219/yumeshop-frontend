@@ -1,10 +1,8 @@
-import './image-gallery.css';
 import { VFC } from 'react';
 import ImageGallery from 'react-image-gallery';
 
-
 interface CalrouselProps {
-  images: { original: string; }[];
+  images: { original: string }[];
 }
 
 export const Calrousel: VFC<CalrouselProps> = (props) => {

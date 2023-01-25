@@ -9,11 +9,16 @@ export default createGlobalStyle`
     margin: 0;
     font-family: ${fonts.NotoSansJP};
     line-height: 1.5;
+    background-color: #eeffee;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  section{
+    margin-top: 64px;
   }
 
   * {

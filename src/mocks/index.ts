@@ -1,5 +1,16 @@
 import uuid from "react-uuid";
 
+export const exampleCalrouselMock = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+  },
+];
 export const exampleCampaignMock = [
   {
     id: uuid(),

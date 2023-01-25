@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  min-height: 100vh;
+  /* min-height: 100vh; */
   flex: 1;
   display: flex;
   flex-direction: column;
