@@ -1,12 +1,14 @@
-import { VFC } from 'react';
+import React, { VFC } from 'react';
 
-export const Logo: VFC = () => (
+export const Logo: VFC = React.forwardRef<SVGSVGElement>((_, ref
+) => (
   <svg
     width="113"
     height="29"
     viewBox="0 0 113 29"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    ref={ref}
   >
     <path
       d="M18.668 6.15817C17.4352 6.15817 16.4583 6.35818 15.7326 6.76559C14.882 7.24753 14.2044 7.9829 13.7949 8.86835C13.6712 9.13218 13.5718 9.40667 13.4979 9.68843H23.1585C23.6204 9.69159 23.7534 9.62375 23.9767 9.25642L25.7722 6.15817H18.668Z"
@@ -53,7 +55,7 @@ export const Logo: VFC = () => (
       fill="#40AF40"
     />
   </svg>
-);
+));
 
 // import/prefer-default-export
 export default Logo;

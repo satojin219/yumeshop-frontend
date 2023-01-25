@@ -110,6 +110,6 @@ export const exampleNoticeMock:WideCardProps[] = [
         color: '#40AF40',
       },
     ],
-    text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+    text: 'テキストテキトテキストテキストテキストテキストテキストテキスト',
   },
 ];
