@@ -34,7 +34,7 @@ const SimpleCardWrapper = styled.div`
 export const SimpleCardSection: VFC<SimpleCardSectionProps> = (props) => {
   const { heading, simpleCardArray } = props;
   return (
-    <section>
+    <section >
       <Headline label={heading} headlineTypes="middle" />
       <SimpleCardWrapper>
         {simpleCardArray.map((simpleCardItem: SimpleCardProps) => (

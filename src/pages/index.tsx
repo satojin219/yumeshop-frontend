@@ -1,14 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import uuid from 'react-uuid';
+import { Calrousel } from 'src/components/organisms/carousel';
 import { Header } from 'src/components/organisms/Header';
 import { SimpleCardSection } from 'src/components/organisms/SimpleCardSection';
-import { exampleCampaignMock, exampleCategoryMock } from 'src/mocks';
+import { WideCardSection } from 'src/components/organisms/WideCardSection';
+import {
+  exampleCalrouselMock,
+  exampleCampaignMock,
+  exampleCategoryMock,
+  exampleNoticeMock,
+} from 'src/mocks';
 
-import { Container, Main, Title, TokenTest } from 'src/styles/Home';
-
-
+import { Container, Main } from 'src/styles/Home';
 
 const Home: NextPage = () => (
   <>
@@ -18,13 +21,22 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Header />
+    <Calrousel images={exampleCalrouselMock} />
     <Main>
       <Container>
-        <SimpleCardSection heading="キャンペーン" simpleCardArray={exampleCampaignMock} />
-        <SimpleCardSection heading="カテゴリー" simpleCardArray={exampleCategoryMock} />
+        <SimpleCardSection
+          heading="キャンペーン"
+          simpleCardArray={exampleCampaignMock}
+        />
+        <SimpleCardSection
+          heading="カテゴリー"
+          simpleCardArray={exampleCategoryMock}
+        />
+        <WideCardSection
+          heading='お知らせ'
+          wideCardArray={exampleNoticeMock}/>
       </Container>
     </Main>
-    ß
   </>
 );
 
