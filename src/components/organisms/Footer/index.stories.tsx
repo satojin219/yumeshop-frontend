@@ -6,6 +6,36 @@ export default {
   title: 'organisms/Footer',
 } as Meta;
 
-const Template: Story = () => <Footer />;
+type FooterProps = React.ComponentProps<typeof Footer>;
+  
+const Template: Story<FooterProps> = (args) => <Footer {...args} />;
 
 export const footer = Template.bind({});
+footer.args = {
+  links: [
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+    {
+      name: 'メニューメニュー',
+      path: 'https://www.yumemi.co.jp/',
+    },
+  ],
+};
