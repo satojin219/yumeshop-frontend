@@ -6,12 +6,18 @@ export const TokenTest = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 0 2rem;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+  @media (min-width: 1152px) {
+    padding: 0 64px;
+  }
 `;
 
 export const Main = styled.main`
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
