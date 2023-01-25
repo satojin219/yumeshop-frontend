@@ -1,6 +1,6 @@
-import uuid from "react-uuid";
 import dayjs from 'dayjs';
 import { WideCardProps } from "src/components/atoms/WideCard";
+import uuid from 'react-uuid';
 
 export const exampleCalrouselMock = [
   {
