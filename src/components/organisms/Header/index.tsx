@@ -16,7 +16,7 @@ const Wrapper = styled.header`
 
 export const Header: VFC = () => (
   <Wrapper>
-    <Link href="/" passHref>
+    <Link href="/" passHref legacyBehavior>
       <Logo />
     </Link>
   </Wrapper>

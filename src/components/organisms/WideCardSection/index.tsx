@@ -26,6 +26,7 @@ export const WideCardSection: VFC<WideCardSectionProps> = (props) => {
             time={simpleCardItem.time}
             labels={simpleCardItem.labels}
             text={simpleCardItem.text}
+            key={simpleCardItem.text}
           />
         ))}
       </WideCardWrapper>
