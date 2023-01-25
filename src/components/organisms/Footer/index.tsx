@@ -20,13 +20,16 @@ const LinkWrapper = styled.div`
   justify-content: flex-start;
   gap: 8px 20px;
   margin-bottom: 64px;
+  @media (min-width: 1152px) {
+    margin-bottom: 32px;
+  }
 `;
 const Link = styled.a`
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   color: #000000;
-  text-decoration: underline
+  text-decoration: underline;
 `;
 
 interface LinkType {
@@ -43,8 +46,9 @@ export const Footer: VFC<FooterProps> = (props) => {
     <Wrapper>
       <LinkWrapper>
         {links.map((link: LinkType) => (
-          <Link href={link.path} key={link.path}>{link.name}</Link>
-          
+          <Link href={link.path} key={link.path}>
+            {link.name}
+          </Link>
         ))}
       </LinkWrapper>
       <p>Copyright {new Date().getFullYear()} YumemiShop</p>
